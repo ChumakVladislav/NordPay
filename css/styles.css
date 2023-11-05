@@ -701,6 +701,7 @@ margin-bottom: 30px; */
 /* Section CTA  */
 .cta-section {
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .cta-div {
   position: relative;
@@ -777,4 +778,136 @@ margin-bottom: 30px; */
 
   width: 787px;
   height: 475px;
+}
+/* Footer  */
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  border-radius: 50px 50px 0px 0px;
+  background: #111315;
+}
+
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 39px;
+}
+
+.footer-logo {
+  width: 439px;
+  height: 111px;
+
+  position: relative;
+  top: -17px;
+}
+
+.footer-social-icons {
+  width: 42px;
+  height: 42px;
+}
+
+.facebook-icon {
+  fill: rgba(197, 219, 233, 1);
+}
+
+.twitter-icon {
+  fill: rgba(247, 193, 217, 1);
+}
+
+.instagram-icon {
+  fill: rgba(198, 233, 221, 1);
+}
+/* .footer-name-list {
+  margin-top: 90px;
+} */
+.footer-name {
+  color: #fff;
+
+  font-family: var(--main-font-verdana);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.footer-scndname {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-family: var(--main-font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.footer-links {
+  color: #fff;
+
+  font-family: var(--main-font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.footer-links-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-contacts-item {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  text-align: left;
+  font-family: var(--main-font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.footer-contacts-item > a {
+  color: #fff;
+}
+
+.footer-contacts-item::before {
+  content: "";
+  display: inline-block;
+  margin-right: 15px;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-image: url("../images/arrow/phone.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts-item:nth-child(2)::before {
+  background-image: url("../images/arrow/email.svg");
+}
+
+.footer-contacts-item:nth-child(3)::before {
+  background-image: url("../images/arrow/Web.svg");
+}
+
+.copyright {
+  color: rgba(254, 254, 254, 0.5);
+
+  margin-top: 50px;
+  text-align: center;
+
+  font-family: var(--main-font-inter);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
 }
