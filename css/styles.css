@@ -83,7 +83,7 @@ body {
 
   font-weight: 700;
   font-family: var(--main-font-verdana);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
 
   border-radius: 50px;
@@ -106,8 +106,8 @@ body {
 
   background-image: url("../images/lines.png");
   background-repeat: no-repeat;
-  background-size: 1500px;
-  background-position: left 69% bottom 97%;
+  background-size: 2509px;
+  background-position: top -101px left 8px;
 }
 .hero-container {
   display: flex;
@@ -822,7 +822,7 @@ margin-bottom: 30px; */
 
 .footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 
   border-radius: 50px 50px 0px 0px;
   background: #111315;
