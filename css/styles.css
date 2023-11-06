@@ -197,32 +197,6 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 744px) {
-  .background-menu {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(46, 47, 66, 0.4);
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    transform: translateX(0);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms linear;
-  }
-  .background-menu.is-hidden {
-    transform: translateX(100%);
-    opacity: 0;
-    /* visibility: hidden; */
-    pointer-events: none;
-  }
-}
-
 .mobile-menu-link {
   color: #000;
 
@@ -304,6 +278,32 @@ body {
   transform: translate(0px, 20px);
 }
 
+@media screen and (max-width: 744px) {
+  .background-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateX(0);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms linear;
+  }
+  .background-menu.is-hidden {
+    transform: translateX(100%);
+    opacity: 0;
+    /* visibility: hidden; */
+    pointer-events: none;
+  }
+}
+
 @media screen and (min-width: 744px) {
   .mob-menu {
     top: 50%;
@@ -332,44 +332,31 @@ body {
 
 /* /Mobile menu  */
 /* Hero  */
-/* 
-.hero-section {
-  margin-top: 85px;
 
-  background-image: url("../images/lines.png");
-  background-repeat: no-repeat;
-  background-size: 2509px;
-  background-position: top -101px left 8px;
+.hero-section {
+  margin-top: 50px;
 }
-.hero-container {
-  display: flex;
-  padding-bottom: 90px;
-}
-.left-column {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  row-gap: 30px;
-}
+
 .h1 {
-  width: 647px;
+  width: 312px;
+  padding-left: 9px;
+  padding-right: 9px;
+
   color: #000;
 
+  text-align: center;
   font-family: Verdana;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
-  text-transform: capitalize;
 }
-
 .purple-h1 {
   display: block;
   color: #4747ce;
 }
-
 .hero-p {
-  width: 515px;
+  width: 335px;
+  text-align: center;
 
   color: rgba(0, 0, 0, 0.8);
 
@@ -380,23 +367,99 @@ body {
   line-height: 1.6;
 }
 
+.left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.hero-img {
+  width: 277px;
+}
+
 .hero-button {
-  padding: 30px 100px;
-  border-radius: 41px;
+  display: block;
+  padding: 28px 93px;
+  margin-bottom: 64px;
+
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--main-font-verdana);
   font-size: 20px;
+  line-height: 1.2;
+
+  border-radius: 50px;
+  border: 1px solid #000;
+  color: #000;
+  background-color: var(--pink-color);
+
+  transition: background-color 500ms linear;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #ff8fc1;
 }
-.img-full-thumb {
-  position: relative;
+@media screen and (min-width: 375px) {
 }
-.img-thumb {
-  width: 491px;
-} */
 
+@media screen and (max-width: 744px) {
+  .hero-button {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .h1 {
+    width: 488px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 54px;
+  }
+  .hero-p {
+    width: 508px;
+  }
+  .hero-button {
+    margin-bottom: 50px;
+  }
+
+  .hero-img {
+    width: 491px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    margin-top: 50px;
+
+    background-image: url("../images/lines.png");
+    background-repeat: no-repeat;
+    background-size: 2509px;
+    background-position: top -101px left 8px;
+  }
+
+  .hero-container {
+    display: flex;
+    padding-bottom: 90px;
+  }
+
+  .h1 {
+    width: 647px;
+    font-size: 64px;
+    text-align: left;
+    padding-right: 56px;
+  }
+  .hero-p {
+    width: 515px;
+    text-align: left;
+  }
+  .left-column {
+    align-items: flex-start;
+  }
+}
 /* /Hero  */
 /* Benefits section  */
 /* .benefits {
