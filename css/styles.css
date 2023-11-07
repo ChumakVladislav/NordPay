@@ -589,7 +589,7 @@ body {
   width: 309px;
   height: 210px;
   border-radius: 30px;
-  border: 1px solid #000;
+  border: none;
 
   /* background: #d1dddb; */
 }
@@ -671,7 +671,7 @@ body {
   .rigth-benefits-photo {
     width: 495px;
     height: 420px;
-
+    border: 1px solid #000;
     background: #d1dddb;
   }
 
