@@ -679,7 +679,7 @@ body {
     width: 495px;
     height: 420px;
     border: 1px solid #000;
-    background: #d1dddb;
+    background-image: url("../images/benefits_img_pc.jpg");
   }
 
   .rigth-benefits-photo::before {
@@ -1336,76 +1336,54 @@ body {
 }
 
 /* Section CTA  */
-/* .cta-section {
-  margin-top: 150px;
-  margin-bottom: 150px;
+.cta-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 .cta-div {
   position: relative;
 
-  width: 1216px;
-  height: 1025px;
+  width: 335px;
+  height: 674px;
 
   text-align: center;
 
   border-radius: 30px;
-  border: 3px solid #000;
+  border: 2px solid #000;
 
   background: #c5dbe9;
 }
 
 .cta-h2 {
-  width: 645px;
+  width: 285px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #000;
   margin-bottom: 30px;
 }
 
-.cta-h2::after {
-  content: "";
-  display: block;
-
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 303px;
-  height: 269px;
-  background-image: url("../images/arrow/cta_carrow_r.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: translate(-93px, 147px);
-}
-
-.cta-h2::before {
-  content: "";
-  display: block;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 303px;
-  height: 269px;
-  background-image: url("../images/arrow/cta_arrow_l.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: translate(93px, 147px);
-}
-
 .cta-div p {
-  width: 566px;
+  width: 315px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: rgba(0, 0, 0, 0.8);
 
   text-align: center;
   font-family: var(--main-font-inter);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
+}
+
+.cta-div .learn-more {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 55px;
+  width: 270px;
 }
 
 .cta_img {
@@ -1413,9 +1391,140 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  width: 787px;
-  height: 475px;
-} */
+  width: 297px;
+  height: 179px;
+}
+
+@media screen and (min-width: 744px) {
+  .cta-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .cta-div {
+    width: 704px;
+    height: 917px;
+
+    border: 3px solid #000;
+  }
+
+  .cta-h2 {
+    width: 632px;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    font-size: 48px;
+  }
+
+  .cta-div p {
+    width: 399px;
+
+    font-size: 22px;
+  }
+
+  .cta_img {
+    width: 517px;
+    height: 312px;
+  }
+
+  .cta-h2::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 137px;
+    height: 254px;
+    background-image: url("../images/tablet_cta_ar_r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-29px, 174px);
+  }
+
+  .cta-h2::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 136px;
+    height: 248px;
+    background-image: url("../images/tablet_cta_ar_l.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(28px, 180px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cta-section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .cta-div {
+    width: 1216px;
+    height: 1025px;
+  }
+  .cta-h2 {
+    width: 658px;
+
+    margin-bottom: 30px;
+  }
+  .cta-div p {
+    width: 566px;
+  }
+
+  .cta_img {
+    width: 787px;
+    height: 475px;
+  }
+
+  .cta-h2::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 303px;
+    height: 269px;
+    background-image: url("../images/arrow/cta_carrow_r.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-70px, 140px);
+  }
+
+  .cta-h2::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 303px;
+    height: 269px;
+    background-image: url("../images/arrow/cta_arrow_l.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(70px, 140px);
+  }
+
+  .cta-div .learn-more {
+    width: 295px;
+  }
+}
+/* 
+
+
+
+
+
+
+
+
+*/
 /* Footer  */
 
 /* .footer {
