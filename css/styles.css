@@ -384,7 +384,7 @@ body {
 }
 
 .hero-img {
-  width: 277px;
+  width: 306px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -509,13 +509,15 @@ body {
 }
 
 .top-left {
-  padding: 49px 44px;
+  padding: 49px 30px;
   border-radius: 30px;
   border: 1px solid #000;
 
   background: #f7c1d9;
 
   transform: rotate(-10deg);
+
+  text-align: center;
 }
 
 .benefits-numbers {
@@ -546,6 +548,8 @@ body {
 
   background: #c5dbe9;
 
+  text-align: center;
+
   transform: rotate(10deg) translateY(-35px);
 }
 
@@ -568,6 +572,8 @@ body {
 }
 
 .bottom-left-benefits {
+  height: 200px;
+
   margin-top: 15px;
   padding: 47px 37px;
 
@@ -625,6 +631,19 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 92px;
+}
+
+@media screen and (max-width: 744px) {
+  .top-left-benefits {
+    width: 289px;
+  }
+  .bottom-left-benefits {
+    width: 289px;
+  }
+
+  .all-benefits {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 744px) {
@@ -772,10 +791,7 @@ body {
 }
 
 .learn-more {
-  display: flex;
   justify-content: center;
-
-  width: 295px;
 
   padding: 30px 75px;
   border: 1px solid black;
@@ -1143,12 +1159,6 @@ body {
   margin-left: 27px;
   margin-right: 27px;
 
-  width: 240px;
-
-  align-self: center;
-  display: flex;
-  justify-content: center;
-
   border: none;
   font-weight: 400;
 }
@@ -1256,7 +1266,7 @@ body {
     row-gap: 100px;
   }
   .section-form {
-    height: 1222px;
+    height: 1290px;
     padding-top: 100px;
 
     border-radius: 50px;
@@ -1286,8 +1296,7 @@ body {
   .input-form > .learn-more {
     margin-left: 159px;
     margin-right: 159px;
-
-    width: 280px;
+    align-self: center;
   }
 
   .form-input::after {
@@ -1375,7 +1384,6 @@ body {
 .cta-div p {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
   color: rgba(0, 0, 0, 0.8);
 
@@ -1389,8 +1397,9 @@ body {
 .cta-div .learn-more {
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 55px;
-  width: 270px;
+  padding: 30px 100px;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 .cta_img {
@@ -1447,7 +1456,7 @@ body {
     background-image: url("../images/tablet_cta_ar_r.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transform: translate(-29px, 174px);
+    transform: translate(-30px, 195px);
   }
 
   .cta-h2::before {
@@ -1462,7 +1471,7 @@ body {
     background-image: url("../images/tablet_cta_ar_l.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transform: translate(28px, 180px);
+    transform: translate(30px, 195px);
   }
 }
 
@@ -1517,10 +1526,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate(70px, 140px);
-  }
-
-  .cta-div .learn-more {
-    width: 295px;
   }
 }
 
@@ -1692,6 +1697,12 @@ body {
   line-height: 1.2;
 }
 @media screen and (min-width: 375px) and (max-width: 744px) {
+  .footer-social-list-first {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1280px) {
   .footer-social-list-first {
     width: 100%;
   }
