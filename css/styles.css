@@ -606,7 +606,7 @@ body {
   width: 335px;
   height: 236px;
   display: block;
-  background-image: url("../images/arrow.png");
+  background-image: url("../images/benefits_mob.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -1104,7 +1104,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  width: 295px;
+  width: 335px;
 
   border-radius: 30px;
   background: #fff;
@@ -1161,7 +1161,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transform: translate(9px, -33px);
+  transform: translate(0px, -33px);
 }
 
 .input::placeholder {
@@ -1334,18 +1334,6 @@ body {
     margin-right: 243px;
   }
 }
-
-/* 
-
-
-
-
-
-
-
-
-
-*/
 
 /* Section CTA  */
 /* .cta-section {
