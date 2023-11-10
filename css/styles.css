@@ -84,8 +84,8 @@ body {
 
 @media screen and (max-width: 744px) {
   .header-container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1397,7 +1397,6 @@ body {
 .cta-div .learn-more {
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 100px;
   display: inline-block;
   margin-top: 50px;
 }
